@@ -1,4 +1,4 @@
-w<?php
+<?php
 session_start();
 $uploads_dir = './file_download';
 $allowed_ext = array('jpg', 'jpeg', 'png', 'gif');
