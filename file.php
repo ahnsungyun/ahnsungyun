@@ -18,7 +18,7 @@
         $sql = "SELECT * FROM file ORDER BY file_name ASC";
         $result = mysqli_query($conn,$sql);
         while($board = mysqli_fetch_array($result)){
-            echo '<p><a href='down.php?num='.$board['num'].'&file_name='.$board['file_name'].''> '.$board['file_name']. '</a></p>';
+            echo '<p><a href=\'down.php?num='.$board['num'].' \'> '.$board['file_name']. '</a></p>';
 }
         }
     ?>
