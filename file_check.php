@@ -26,7 +26,9 @@ if (!in_array($ext, $allowed_ext)) {
     echo "Extension not allowed.";
     exit;
 }
-
+// Add a random value to the filename
+$random_value = mt_rand(1000, 9999); // Generate a random number between 1000 and 9999
+$new_name = $randomvalue . '' . $name; // Combine random value with the original filename
 move_uploaded_file($_FILES['file']['tmp_name'], "$uploads_dir/$name");
 
 if (!isset($_SESSION['username'])) {
