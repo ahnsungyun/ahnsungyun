@@ -26,9 +26,7 @@
     <br>
     <button onclick="location.href='board.php'">Go Back</button>
     <br> <br>
-    <div class="mb-3">
-        <input type="file" name="upfile" placeholder="file">
-    </div>
+    
     
     <form method="post" action="comment_check.php"> 
         <input type='hidden' name='topic_num' value=<?php echo $_GET['id']?>>
