@@ -46,6 +46,6 @@ $user_name = $_SESSION['username'];
 
 $sql = "INSERT INTO file(file_name,file_address,user_name) VALUES ('$file_name','$file_address','$user_name');";
 $result = mysqli_query($conn, $sql);
-
+echo "temp:".$_FILES['quali_excel']['tmp_name']."<br>";
 echo "<script>alert('Upload Complete!'); location.replace('file.php');</script>";
 ?>
